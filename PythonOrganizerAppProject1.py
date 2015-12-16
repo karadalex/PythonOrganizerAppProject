@@ -1,6 +1,6 @@
 ﻿import __version__
-import wx
-from PythonOrganizerAppProject1.codeFilesPackage import csvViewer
+from codeFilesPackage import wx
+from codeFilesPackage import csvViewer
 
 
 class MyApp(wx.App):
