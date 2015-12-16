@@ -4,7 +4,7 @@ import csvViewer
 class MyApp(wx.App):
 
     def OnInit(self):
-       frame = MyFrame("Hello World", (50, 60), (450, 340))
+       frame = MyFrame("Organizer", (50, 60), (450, 340))
        frame.Show()
        self.SetTopWindow(frame)
        return True
@@ -14,7 +14,6 @@ class MyFrame(wx.Frame):
         wx.Frame.__init__(self, None, -1, title, pos, size)
         menuFile = wx.Menu()
         menuFile.Append(1, "&About...")
-        menuFile.AppendSeparator()
         menuFile.Append(2, "Import Contacts...")
         menuFile.AppendSeparator()
         menuFile.Append(3, "E&xit")
@@ -31,7 +30,7 @@ class MyFrame(wx.Frame):
         self.Close()
 
     def OnAbout(self, event):
-        wx.MessageBox("wxPython", "About Hello World", wx.OK | wx.ICON_INFORMATION, self)
+        wx.MessageBox("An organizer app made with Python 2.7.8 and wxPython", "wxPython", wx.OK | wx.ICON_INFORMATION, self)
 
     def OnImportContacts(self, event):
         csvViewer.makeContactsTextFromCsv()
