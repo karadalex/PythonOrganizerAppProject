@@ -33,5 +33,6 @@ def makeContactsTextFromCsv():
     newFile.close()
     return newFile
 
-newFile = makeContactsTextFromCsv()
+#test if file is created
+#newFile = makeContactsTextFromCsv()
 

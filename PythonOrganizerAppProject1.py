@@ -1,4 +1,5 @@
 ﻿import wx
+import csvViewer
 
 class MyApp(wx.App):
 
@@ -14,20 +15,26 @@ class MyFrame(wx.Frame):
         menuFile = wx.Menu()
         menuFile.Append(1, "&About...")
         menuFile.AppendSeparator()
-        menuFile.Append(2, "E&xit")
+        menuFile.Append(2, "Import Contacts...")
+        menuFile.AppendSeparator()
+        menuFile.Append(3, "E&xit")
         menuBar = wx.MenuBar()
         menuBar.Append(menuFile, "&File")
         self.SetMenuBar(menuBar)
         self.CreateStatusBar()
         self.SetStatusText("Welcome to wxPython!")
         self.Bind(wx.EVT_MENU, self.OnAbout, id=1)
-        self.Bind(wx.EVT_MENU, self.OnQuit, id=2)
+        self.Bind(wx.EVT_MENU, self.OnImportContacts, id=2)
+        self.Bind(wx.EVT_MENU, self.OnQuit, id=3)
 
     def OnQuit(self, event):
         self.Close()
 
     def OnAbout(self, event):
         wx.MessageBox("wxPython", "About Hello World", wx.OK | wx.ICON_INFORMATION, self)
+
+    def OnImportContacts(self, event):
+        csvViewer.makeContactsTextFromCsv()
 
 def run_main():
     app = MyApp(False)
