@@ -13,24 +13,34 @@ def makeContactsTextFromCsv():
         print "_________________________________________________________________________________"
     dialog.Destroy()
 
-    csvFile = open(filePath, "r")
-    newFile = open("contactsFile.txt", "a+")
-    csvFileArray = []
-    for i in csvFile:
-        csvFileArray.append(i.split(","))
+    flag=True
+    try:
+        csvFile = open(filePath, "r")
+        newFile = open("contactsFile.txt", "a+")
+        csvFileArray = []
+        for i in csvFile:
+            csvFileArray.append(i.split(","))
+        csvFile.close()
 
-    tagsList = csvFileArray[0]
-    for i in range(1, len(csvFileArray)):
-        for j in range(len(csvFileArray[0])):
-            if csvFileArray[i][j] !='' and csvFileArray[i][j] != '\n':
-                newFile.write(csvFileArray[0][j] + ": " + csvFileArray[i][j])
-                newFile.write('\n')
-        newFile.write("_________________________________________________________________________________")
-        newFile.write('\n')
+        tagsList = csvFileArray[0]
+        for i in range(1, len(csvFileArray)):
+            for j in range(len(csvFileArray[0])):
+                if csvFileArray[i][j] !='' and csvFileArray[i][j] != '\n':
+                    newFile.write(csvFileArray[0][j] + ": " + csvFileArray[i][j])
+                    newFile.write('\n')
+            newFile.write("_________________________________________________________________________________")
+            newFile.write('\n')
 
-    csvFile.close()
-    newFile.close()
-    return newFile
+        newFile.close()
+    except UnboundLocalError:
+        flag=False
+        pass
+
+    if flag == True:
+        return newFile
+    else:
+        pass
+
 
 #test if file is created
 #newFile = makeContactsTextFromCsv()
