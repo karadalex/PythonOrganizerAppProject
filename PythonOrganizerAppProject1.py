@@ -2,6 +2,7 @@
 from codeFilesPackage import wx
 from codeFilesPackage import csvViewer
 from codeFilesPackage import contactsTextEditor
+from codeFilesPackage import icsViewer
 
 
 class MyApp(wx.App):
@@ -17,6 +18,7 @@ class MyFrame(wx.Frame):
         wx.Frame.__init__(self, None, -1, title, pos, size)
         menuFile = wx.Menu()
         menuFile.Append(1, "Import Contacts...")
+        menuFile.Append(6, "Import Calendar...")
         menuFile.AppendSeparator()
         menuFile.Append(2, "E&xit")
         menuHelp = wx.Menu()
@@ -36,6 +38,7 @@ class MyFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self.OnAbout, id=3)
         self.Bind(wx.EVT_MENU, self.OnVersion, id=4)
         self.Bind(wx.EVT_MENU, self.OnEditViewContacts, id=5)
+        self.Bind(wx.EVT_MENU, self.OnImportCalendar, id=6)
 
     def OnQuit(self, event):
         self.Close()
@@ -51,6 +54,9 @@ class MyFrame(wx.Frame):
 
     def OnEditViewContacts(self, event):
         contactsTextEditor.contactsTextEdit()
+
+    def OnImportCalendar(self, event):
+        icsViewer.makeContactsTextFromCsv()
 
 def run_main():
     app = MyApp(False)
