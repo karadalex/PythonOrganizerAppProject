@@ -1,13 +1,13 @@
-import wx
+import PythonOrganizerAppProject1.wx
 import os
 
 def makeContactsTextFromCsv():
-    app = wx.PySimpleApp()
+    app = PythonOrganizerAppProject1.wx.PySimpleApp()
     wildcard = "Outlook CSV file (*.csv)|*.csv|" \
                "Gmail CSV file (*.csv)|*.csv|" \
             "All files (*.*)|*.*"
-    dialog = wx.FileDialog(None, "Choose a file", os.getcwd(), "", wildcard, wx.OPEN)
-    if dialog.ShowModal() == wx.ID_OK:
+    dialog = PythonOrganizerAppProject1.wx.FileDialog(None, "Choose a file", os.getcwd(), "", wildcard, PythonOrganizerAppProject1.wx.OPEN)
+    if dialog.ShowModal() == PythonOrganizerAppProject1.wx.ID_OK:
         filePath = dialog.GetPath()
         print "Openning: ", filePath, "..."
         print "_________________________________________________________________________________"
