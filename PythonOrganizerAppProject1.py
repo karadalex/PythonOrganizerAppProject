@@ -1,6 +1,7 @@
 ﻿import __version__
 from codeFilesPackage import wx
 from codeFilesPackage import csvViewer
+from codeFilesPackage import contactsTextEditor
 
 
 class MyApp(wx.App):
@@ -21,16 +22,20 @@ class MyFrame(wx.Frame):
         menuHelp = wx.Menu()
         menuHelp.Append(3, "&About...")
         menuHelp.Append(4, "&Version")
+        menuEdit = wx.Menu()
+        menuEdit.Append(5, "&Edit/View your Contacts...")
         menuBar = wx.MenuBar()
         menuBar.Append(menuFile, "&File")
+        menuBar.Append(menuEdit, "&Edit")
         menuBar.Append(menuHelp, "&Help")
         self.SetMenuBar(menuBar)
         self.CreateStatusBar()
-        self.SetStatusText("Welcome your personal Organizer!")
+        self.SetStatusText("Welcome to your personal Organizer!")
         self.Bind(wx.EVT_MENU, self.OnImportContacts, id=1)
         self.Bind(wx.EVT_MENU, self.OnQuit, id=2)
         self.Bind(wx.EVT_MENU, self.OnAbout, id=3)
         self.Bind(wx.EVT_MENU, self.OnVersion, id=4)
+        self.Bind(wx.EVT_MENU, self.OnEditViewContacts, id=5)
 
     def OnQuit(self, event):
         self.Close()
@@ -43,6 +48,9 @@ class MyFrame(wx.Frame):
 
     def OnVersion(self, event):
         wx.MessageBox("The current version of this program is: "+__version__.VERSION_STRING, "Version of Organizer", wx.OK | wx.ICON_INFORMATION, self)
+
+    def OnEditViewContacts(self, event):
+        contactsTextEditor.contactsTextEdit()
 
 def run_main():
     app = MyApp(False)
