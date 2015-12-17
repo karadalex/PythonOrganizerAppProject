@@ -36,7 +36,6 @@ def makeContactsTextFromCsv():
             newFile.write("_________________________________________________________________________________")
             newFile.write('\n')
 
-        newFile.close()
     except UnboundLocalError:
         flag=False
         pass
@@ -45,6 +44,8 @@ def makeContactsTextFromCsv():
         return newFile
     else:
         pass
+
+    newFile.close()
 
 
 #test if file is created

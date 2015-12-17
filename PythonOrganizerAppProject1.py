@@ -1,9 +1,12 @@
-﻿import __version__
+﻿# -*- coding: utf-8 -*-
+
+import __version__
 from codeFilesPackage import wx
-from codeFilesPackage import csvViewer
+from codeFilesPackage import csvConverter
 from codeFilesPackage import contactsTextEditor
-from codeFilesPackage import icsViewer
+from codeFilesPackage import icsConverter
 from codeFilesPackage import nameDayViewer
+from codeFilesPackage import date
 
 
 class MyApp(wx.App):
@@ -43,7 +46,7 @@ class MyFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self.OnVersion, id=4)
         self.Bind(wx.EVT_MENU, self.OnEditViewContacts, id=5)
         self.Bind(wx.EVT_MENU, self.OnImportCalendar, id=6)
-        self.Bind(wx.EVT_MENU, self.OnViewNameday, id=7)
+        self.Bind(wx.EVT_MENU, self.OnViewNamedayToday, id=7)
 
     def OnQuit(self, event):
         self.Close()
@@ -52,7 +55,7 @@ class MyFrame(wx.Frame):
         wx.MessageBox("An organizer app made with Python 2.7.8 and wxPython", "wxPython", wx.OK | wx.ICON_INFORMATION, self)
 
     def OnImportContacts(self, event):
-        csvViewer.makeContactsTextFromCsv()
+        csvConverter.makeContactsTextFromCsv()
 
     def OnVersion(self, event):
         wx.MessageBox("The current version of this program is: "+__version__.VERSION_STRING, "Version of Organizer", wx.OK | wx.ICON_INFORMATION, self)
@@ -61,10 +64,14 @@ class MyFrame(wx.Frame):
         contactsTextEditor.contactsTextEdit()
 
     def OnImportCalendar(self, event):
-        icsViewer.makeContactsTextFromCsv()
+        icsConverter.makeContactsTextFromCsv()
 
-    def OnViewNameday(self, event):
-        pass
+    def OnViewNamedayToday(self, event):
+        date1 = str(date.shortDateString())
+        date2 = str(date.fullDateString())
+        string = nameDayViewer.nameDayDictionaryCreation()["8/6"]
+        print date1, date2
+        wx.MessageBox("Today celebrate these names: \n"+"Kallioppi", "Name Celebrations for "+date2, wx.OK, self)
 
 def run_main():
     app = MyApp(False)
