@@ -3,6 +3,7 @@ from codeFilesPackage import wx
 from codeFilesPackage import csvViewer
 from codeFilesPackage import contactsTextEditor
 from codeFilesPackage import icsViewer
+from codeFilesPackage import nameDayViewer
 
 
 class MyApp(wx.App):
@@ -26,9 +27,12 @@ class MyFrame(wx.Frame):
         menuHelp.Append(4, "&Version")
         menuEdit = wx.Menu()
         menuEdit.Append(5, "&Edit/View your Contacts...")
+        menuView = wx.Menu()
+        menuView.Append(7, "&View whose Nameday is today...")
         menuBar = wx.MenuBar()
         menuBar.Append(menuFile, "&File")
         menuBar.Append(menuEdit, "&Edit")
+        menuBar.Append(menuView, "&View")
         menuBar.Append(menuHelp, "&Help")
         self.SetMenuBar(menuBar)
         self.CreateStatusBar()
@@ -39,6 +43,7 @@ class MyFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self.OnVersion, id=4)
         self.Bind(wx.EVT_MENU, self.OnEditViewContacts, id=5)
         self.Bind(wx.EVT_MENU, self.OnImportCalendar, id=6)
+        self.Bind(wx.EVT_MENU, self.OnViewNameday, id=7)
 
     def OnQuit(self, event):
         self.Close()
@@ -57,6 +62,9 @@ class MyFrame(wx.Frame):
 
     def OnImportCalendar(self, event):
         icsViewer.makeContactsTextFromCsv()
+
+    def OnViewNameday(self, event):
+        pass
 
 def run_main():
     app = MyApp(False)

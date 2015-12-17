@@ -1,5 +1,8 @@
 import wx
 import os
+import gotoMainFolderDirectory
+
+
 
 def makeContactsTextFromCsv():
     app = wx.PySimpleApp()
@@ -16,7 +19,8 @@ def makeContactsTextFromCsv():
     flag=True
     try:
         csvFile = open(filePath, "r")
-        newFile = open("contactsFile.txt", "a+")
+        gotoMainFolderDirectory.go()
+        newFile = open("mediaFilesPackage/contactsFile.txt", "a+")
         os.getcwd()
         csvFileArray = []
         for i in csvFile:

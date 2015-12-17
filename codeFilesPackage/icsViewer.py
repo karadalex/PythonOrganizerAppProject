@@ -1,7 +1,8 @@
 import wx
 import os
+import gotoMainFolderDirectory
 
-def makeContactsTextFromCsv():
+def makeCalendarTextFromCsv():
     app = wx.PySimpleApp()
     wildcard = "Google Calendar file (*.ics)|*.ics|" \
                "Apple Calendar (*.ics)|*.ics|" \
@@ -16,7 +17,8 @@ def makeContactsTextFromCsv():
     flag=True
     try:
         icsFile = open(filePath, "r")
-        newFile = open("calendarFile.txt", "a+")
+        gotoMainFolderDirectory.go()
+        newFile = open("mediaFilesPackage/calendarFile.txt", "a+")
         os.getcwd()
         icsFileArray = []
         for i in icsFile:
@@ -42,7 +44,4 @@ def makeContactsTextFromCsv():
     else:
         pass
 
-
-#test if file is created
-#newFile = makeContactsTextFromCsv()
 
