@@ -69,9 +69,8 @@ class MyFrame(wx.Frame):
     def OnViewNamedayToday(self, event):
         date1 = str(date.shortDateString())
         date2 = str(date.fullDateString())
-        string = nameDayViewer.nameDayDictionaryCreation()["8/6"]
-        print date1, date2
-        wx.MessageBox("Today celebrate these names: \n"+"Kallioppi", "Name Celebrations for "+date2, wx.OK, self)
+        string = nameDayViewer.nameDayDictionaryCreation()[date1]
+        wx.MessageBox("Today celebrate these names: \n"+string, "Name Celebrations for "+date2, wx.OK, self)
 
 def run_main():
     app = MyApp(False)

@@ -1,5 +1,6 @@
 import gotoMainFolderDirectory
 import textFileOperations
+import greeklish
 
 
 def nameDayDictionaryCreation():
@@ -9,7 +10,6 @@ def nameDayDictionaryCreation():
 
     nameDayDictionary = {}
     for day in dataList:
-        stringNames = ""
         dayList = day.split("\n")
         date = dayList[0]
         date = date.split(" ")
@@ -18,6 +18,17 @@ def nameDayDictionaryCreation():
         dayString = ""
         for name in dayList:
             name = name.strip()
+            name = name.replace("(", "")
+            name = name.replace(")", "")
+            namesList = name.split(",")
+            name = ""
+            if len(namesList) > 1:
+                name += "("
+            for i in range(len(namesList)):
+                namesList[i] = greeklish.greekStringToGreeklishString(namesList[i])
+                name += namesList[i]+","
+            if len(namesList) > 1:
+                name += ")"
             dayString  += name+"\n"
         # put date and names in dictionary
         # dictionary key: date, format: "day/month"
@@ -25,4 +36,5 @@ def nameDayDictionaryCreation():
         nameDayDictionary.update({date:dayString})
     return nameDayDictionary
 
+# Check function nameDayDictionaryCreation()
 #print nameDayDictionaryCreation()

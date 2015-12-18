@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aac20f8a-d2c3-4d59-a4c8-92fe458b984a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/codeFilesPackage/csvViewer.py" afterPath="$PROJECT_DIR$/codeFilesPackage/csvConverter.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/codeFilesPackage/icsViewer.py" afterPath="$PROJECT_DIR$/codeFilesPackage/icsConverter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonOrganizerAppProject1.py" afterPath="$PROJECT_DIR$/PythonOrganizerAppProject1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py" afterPath="$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codeFilesPackage/greeklish.py" afterPath="$PROJECT_DIR$/codeFilesPackage/greeklish.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codeFilesPackage/nameDayViewer.py" afterPath="$PROJECT_DIR$/codeFilesPackage/nameDayViewer.py" />
     </list>
     <ignored path="PythonOrganizerAppProject1.iws" />
@@ -21,8 +18,9 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$PythonOrganizerAppProject1.coverage" NAME="PythonOrganizerAppProject1 Coverage Results" MODIFIED="1450390930511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$nameDayViewer.coverage" NAME="nameDayViewer Coverage Results" MODIFIED="1450390596486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
+    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$PythonOrganizerAppProject1.coverage" NAME="PythonOrganizerAppProject1 Coverage Results" MODIFIED="1450397363529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$nameDayViewer.coverage" NAME="nameDayViewer Coverage Results" MODIFIED="1450397015474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
+    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$greeklish.coverage" NAME="greeklish Coverage Results" MODIFIED="1450395694934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$contactsTextEditor.coverage" NAME="contactsTextEditor Coverage Results" MODIFIED="1450362106576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$gotoMainFolderDirectory.coverage" NAME="gotoMainFolderDirectory Coverage Results" MODIFIED="1450363099018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$date.coverage" NAME="date Coverage Results" MODIFIED="1450383992792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
@@ -39,11 +37,21 @@
       <file leaf-file-name="PythonOrganizerAppProject1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PythonOrganizerAppProject1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74307305">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.35768262">
+              <caret line="71" column="65" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="greeklish.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeFilesPackage/greeklish.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/codeFilesPackage/nameDayViewer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -116,8 +124,8 @@
         <option value="$PROJECT_DIR$/codeFilesPackage/date.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/textFileOperations.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/csvConverter.py" />
-        <option value="$PROJECT_DIR$/PythonOrganizerAppProject1.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/greeklish.py" />
+        <option value="$PROJECT_DIR$/PythonOrganizerAppProject1.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/nameDayViewer.py" />
       </list>
     </option>
@@ -159,7 +167,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -208,6 +215,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,24 +248,6 @@
       <module name="PythonOrganizerAppProject1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeFilesPackage/nameDayViewer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="contactsTextEditor" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codeFilesPackage" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonOrganizerAppProject1" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -312,6 +302,24 @@
       <module name="PythonOrganizerAppProject1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeFilesPackage/date.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="greeklish" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codeFilesPackage" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonOrganizerAppProject1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeFilesPackage/greeklish.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -511,18 +519,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.nameDayViewer" />
-      <item index="1" class="java.lang.String" itemvalue="Python.contactsTextEditor" />
-      <item index="2" class="java.lang.String" itemvalue="Python.gotoMainFolderDirectory" />
-      <item index="3" class="java.lang.String" itemvalue="Python.PythonOrganizerAppProject1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.date" />
+      <item index="1" class="java.lang.String" itemvalue="Python.gotoMainFolderDirectory" />
+      <item index="2" class="java.lang.String" itemvalue="Python.PythonOrganizerAppProject1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.date" />
+      <item index="4" class="java.lang.String" itemvalue="Python.greeklish" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.PythonOrganizerAppProject1" />
         <item index="1" class="java.lang.String" itemvalue="Python.nameDayViewer" />
-        <item index="2" class="java.lang.String" itemvalue="Python.date" />
-        <item index="3" class="java.lang.String" itemvalue="Python.gotoMainFolderDirectory" />
-        <item index="4" class="java.lang.String" itemvalue="Python.contactsTextEditor" />
+        <item index="2" class="java.lang.String" itemvalue="Python.greeklish" />
+        <item index="3" class="java.lang.String" itemvalue="Python.date" />
+        <item index="4" class="java.lang.String" itemvalue="Python.gotoMainFolderDirectory" />
       </list>
     </recent_temporary>
   </component>
@@ -581,6 +589,52 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/PythonOrganizerAppProject1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeFilesPackage/date.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeFilesPackage/nameDayViewer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeFilesPackage/textFileOperations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeFilesPackage/csvConverter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PythonOrganizerAppProject1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -646,7 +700,6 @@
         <state split_layout="SPLIT">
           <first_editor vertical-scroll-proportion="0.0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -667,7 +720,6 @@
         <state split_layout="SPLIT">
           <first_editor vertical-scroll-proportion="0.0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -675,7 +727,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -683,7 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,7 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.74307305">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,19 +764,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeFilesPackage/date.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/encodings/cp1253.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59949625">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,7 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13858695">
           <caret line="3" column="11" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,28 +804,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/codeFilesPackage/greeklish.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeFilesPackage/date.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/codeFilesPackage/nameDayViewer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeFilesPackage/greeklish.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0982368">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PythonOrganizerAppProject1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74307305">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.35768262">
+          <caret line="71" column="65" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
           </folding>
