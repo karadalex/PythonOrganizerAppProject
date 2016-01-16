@@ -45,7 +45,10 @@ def makeContactsTextFromCsv():
     else:
         pass
 
-    newFile.close()
+    try:
+        newFile.close()
+    except UnboundLocalError:
+        pass
 
 
 #test if file is created

@@ -64,13 +64,19 @@ class MyFrame(wx.Frame):
         contactsTextEditor.contactsTextEdit()
 
     def OnImportCalendar(self, event):
-        icsConverter.makeContactsTextFromCsv()
+        icsConverter.makeCalendarTextFromCsv()
 
     def OnViewNamedayToday(self, event):
         date1 = str(date.shortDateString())
         date2 = str(date.fullDateString())
-        string = nameDayViewer.nameDayDictionaryCreation()[date1]
-        wx.MessageBox("Today celebrate these names: \n"+string, "Name Celebrations for "+date2, wx.OK, self)
+        try:
+            string = nameDayViewer.nameDayDictionaryCreation()[date1]
+        except KeyError:
+            string = ""
+        if string != "":
+            wx.MessageBox("Shmera giortazoyn ta onomata: \n"+string, "Name Celebrations for "+date2, wx.OK, self)
+        else:
+            wx.MessageBox("Gia shmera den yparxei kapoio onoma poy na exei giorth"+string, "Name Celebrations for "+date2, wx.OK, self)
 
 def run_main():
     app = MyApp(False)
