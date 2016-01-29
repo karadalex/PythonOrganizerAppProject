@@ -20,9 +20,9 @@ class TextFrame(wx.Frame):
         panel.SetSizer(sizer)
 
 def contactsTextEdit():
-    app = wx.PySimpleApp()
+    #app = wx.PySimpleApp()
     frame = TextFrame()
     frame.Show()
-    app.MainLoop()
+    #app.MainLoop()
 
 #contactsTextEdit()

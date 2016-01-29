@@ -9,6 +9,7 @@ from codeFilesPackage import nameDayViewer
 from codeFilesPackage import date
 #from codeFilesPackage import calendarSimpleText
 import os
+from codeFilesPackage import myNotesEditor
 
 
 class MyApp(wx.App):
@@ -36,10 +37,13 @@ class MyFrame(wx.Frame):
         menuView = wx.Menu()
         menuView.Append(7, "&View whose Nameday is today...")
         menuView.Append(8, "&Calendar")
+        menuNotes = wx.Menu()
+        menuNotes.Append(9, "&Edit Notes...")
         menuBar = wx.MenuBar()
         menuBar.Append(menuFile, "&File")
         menuBar.Append(menuEdit, "&Edit")
         menuBar.Append(menuView, "&View")
+        menuBar.Append(menuNotes, "&My Notes")
         menuBar.Append(menuHelp, "&Help")
         self.SetMenuBar(menuBar)
         self.CreateStatusBar()
@@ -52,6 +56,7 @@ class MyFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self.OnImportCalendar, id=6)
         self.Bind(wx.EVT_MENU, self.OnViewNamedayToday, id=7)
         self.Bind(wx.EVT_MENU, self.OnViewCalendar, id=8)
+        self.Bind(wx.EVT_MENU, self.OnEditNotes, id=9)
 
 
         #load welcome picture
@@ -101,6 +106,9 @@ class MyFrame(wx.Frame):
         filename=os.getcwd()+"\codeFilesPackage\calendarSimpleText.pyw"
         print filename
         os.startfile(filename, 'open')
+
+    def OnEditNotes(self, event):
+        myNotesEditor.notesTextEdit()
 
 
 
