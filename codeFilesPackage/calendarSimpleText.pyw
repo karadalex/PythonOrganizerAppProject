@@ -75,8 +75,7 @@ class TestFrame(wx.Frame):
         grid = SimpleCalendarGrid(self)
 
 
-def runCalendar():
-    #appCalendar = wx.App()
-    frame = TestFrame(None)
-    frame.Show(True)
-    #appCalendar.MainLoop()
+appCalendar = wx.App()
+frame = TestFrame(None)
+frame.Show(True)
+appCalendar.MainLoop()

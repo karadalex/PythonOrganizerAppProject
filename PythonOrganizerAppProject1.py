@@ -7,7 +7,8 @@ from codeFilesPackage import contactsTextEditor
 from codeFilesPackage import icsConverter
 from codeFilesPackage import nameDayViewer
 from codeFilesPackage import date
-from codeFilesPackage import calendarSimpleText
+#from codeFilesPackage import calendarSimpleText
+import os
 
 
 class MyApp(wx.App):
@@ -20,7 +21,7 @@ class MyApp(wx.App):
 
 class MyFrame(wx.Frame):
     def __init__(self, title, pos, size):
-        wx.Frame.__init__(self, None, -1, title, pos, size, style=wx.SYSTEM_MENU | wx.CLOSE_BOX | wx.MINIMIZE_BOX | wx.CAPTION)
+        myFrame = wx.Frame.__init__(self, None, -1, title, pos, size, style=wx.SYSTEM_MENU | wx.CLOSE_BOX | wx.MINIMIZE_BOX | wx.CAPTION)
 
         menuFile = wx.Menu()
         menuFile.Append(1, "Import Contacts...")
@@ -34,6 +35,7 @@ class MyFrame(wx.Frame):
         menuEdit.Append(5, "&Edit/View your Contacts...")
         menuView = wx.Menu()
         menuView.Append(7, "&View whose Nameday is today...")
+        menuView.Append(8, "&Calendar")
         menuBar = wx.MenuBar()
         menuBar.Append(menuFile, "&File")
         menuBar.Append(menuEdit, "&Edit")
@@ -49,6 +51,7 @@ class MyFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self.OnEditViewContacts, id=5)
         self.Bind(wx.EVT_MENU, self.OnImportCalendar, id=6)
         self.Bind(wx.EVT_MENU, self.OnViewNamedayToday, id=7)
+        self.Bind(wx.EVT_MENU, self.OnViewCalendar, id=8)
 
 
         #load welcome picture
@@ -93,11 +96,17 @@ class MyFrame(wx.Frame):
         else:
             wx.MessageBox("Gia shmera den yparxei kapoio onoma poy na exei giorth"+string, "Name Celebrations for "+date2, wx.OK, self)
 
+    def OnViewCalendar(self, event):
+        #calendarSimpleText.runCalendar()
+        filename=os.getcwd()+"\codeFilesPackage\calendarSimpleText.pyw"
+        print filename
+        os.startfile(filename, 'open')
+
 
 
 def run_main():
-    app = MyApp(False)
-    app.MainLoop()
+    mainApplication = MyApp(False)
+    mainApplication.MainLoop()
 
 if __name__ == "__main__":
     run_main()

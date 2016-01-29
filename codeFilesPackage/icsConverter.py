@@ -3,7 +3,7 @@ import os
 import gotoMainFolderDirectory
 
 def makeCalendarTextFromCsv():
-    app = wx.PySimpleApp()
+    #app = wx.App()
     wildcard = "Google Calendar file (*.ics)|*.ics|" \
                "Apple Calendar (*.ics)|*.ics|" \
             "All files (*.*)|*.*"
@@ -43,5 +43,4 @@ def makeCalendarTextFromCsv():
         return newFile
     else:
         pass
-
 

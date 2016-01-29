@@ -6,7 +6,7 @@ import greeklish
 
 
 def makeContactsTextFromCsv():
-    app = wx.PySimpleApp()
+    #app = wx.App()
     wildcard = "Outlook CSV file (*.csv)|*.csv|" \
                "Gmail CSV file (*.csv)|*.csv|" \
             "All files (*.*)|*.*"
@@ -52,7 +52,7 @@ def makeContactsTextFromCsv():
     except UnboundLocalError:
         pass
 
-
+    #app.Destroy()
 #test if file is created
 #newFile = makeContactsTextFromCsv()
 
