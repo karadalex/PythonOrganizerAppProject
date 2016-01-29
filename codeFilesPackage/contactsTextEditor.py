@@ -1,5 +1,8 @@
 import wx
 import textFileOperations
+import gotoMainFolderDirectory
+import greeklish
+
 
 
 class TextFrame(wx.Frame):
@@ -7,6 +10,7 @@ class TextFrame(wx.Frame):
         wx.Frame.__init__(self, None, -1, 'Text Entry Example', size=(720, 480))
         panel = wx.Panel(self, -1)
         multiLabel = wx.StaticText(panel, -1)
+        gotoMainFolderDirectory.go()
         contacts = textFileOperations.textFileToString("mediaFilesPackage/contactsFile.txt")
         multiText = wx.TextCtrl(panel, -1,contacts,size=(700, 480), style=wx.TE_MULTILINE)
         multiText.SetInsertionPoint(0)
@@ -20,3 +24,5 @@ def contactsTextEdit():
     frame = TextFrame()
     frame.Show()
     app.MainLoop()
+
+#contactsTextEdit()

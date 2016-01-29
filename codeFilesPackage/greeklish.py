@@ -83,3 +83,4 @@ def greekStringToGreeklishString(string):
 # Test cases
 #print greekToGreeklish("\xce")
 #print greekStringToGreeklishString("Όλα καλά")
+#print greekStringToGreeklishString("Εισαγωγή στους Υπολογιστές")

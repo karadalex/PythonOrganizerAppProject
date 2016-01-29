@@ -2,10 +2,14 @@ import time
 
 def numberOfDay():
     day = time.strftime("%d")
+    if day[0] == '0':
+        day = day[1:]
     return day
 
 def numberOfMonth():
     month = time.strftime("%m")
+    if month[0] == '0':
+        month = month[1:]
     return month
 
 def fullWeekDayName():

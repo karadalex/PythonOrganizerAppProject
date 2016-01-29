@@ -1,6 +1,7 @@
 import wx
 import os
 import gotoMainFolderDirectory
+import greeklish
 
 
 
@@ -26,10 +27,11 @@ def makeContactsTextFromCsv():
         for i in csvFile:
             csvFileArray.append(i.split(","))
         csvFile.close()
+        print csvFileArray
 
         tagsList = csvFileArray[0]
         for i in range(1, len(csvFileArray)):
-            for j in range(len(csvFileArray[0])):
+            for j in range(len(csvFileArray[i])):
                 if csvFileArray[i][j] !='' and csvFileArray[i][j] != '\n':
                     newFile.write(csvFileArray[0][j] + ": " + csvFileArray[i][j])
                     newFile.write('\n')

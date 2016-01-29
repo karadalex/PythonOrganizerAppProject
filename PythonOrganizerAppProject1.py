@@ -7,19 +7,21 @@ from codeFilesPackage import contactsTextEditor
 from codeFilesPackage import icsConverter
 from codeFilesPackage import nameDayViewer
 from codeFilesPackage import date
+from codeFilesPackage import calendarSimpleText
 
 
 class MyApp(wx.App):
 
     def OnInit(self):
        frame = MyFrame("Organizer", (50, 60), (720, 480))
-       frame.Show()
+       frame.Show(True)
        self.SetTopWindow(frame)
        return True
 
 class MyFrame(wx.Frame):
     def __init__(self, title, pos, size):
-        wx.Frame.__init__(self, None, -1, title, pos, size)
+        wx.Frame.__init__(self, None, -1, title, pos, size, style=wx.SYSTEM_MENU | wx.CLOSE_BOX | wx.MINIMIZE_BOX | wx.CAPTION)
+
         menuFile = wx.Menu()
         menuFile.Append(1, "Import Contacts...")
         menuFile.Append(6, "Import Calendar...")
@@ -47,6 +49,19 @@ class MyFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self.OnEditViewContacts, id=5)
         self.Bind(wx.EVT_MENU, self.OnImportCalendar, id=6)
         self.Bind(wx.EVT_MENU, self.OnViewNamedayToday, id=7)
+
+
+        #load welcome picture
+        self.bitmap = wx.Bitmap("mediaFilesPackage/welcomeScreen1.jpg")
+        wx.EVT_PAINT(self, self.Paint)
+        self.Centre()
+
+        self.SetBackgroundColour('#1485CC')
+
+
+    def Paint(self, event):
+        dc = wx.PaintDC(self)
+        dc.DrawBitmap(self.bitmap, 30, 20)
 
     def OnQuit(self, event):
         self.Close()
@@ -77,6 +92,8 @@ class MyFrame(wx.Frame):
             wx.MessageBox("Shmera giortazoyn ta onomata: \n"+string, "Name Celebrations for "+date2, wx.OK, self)
         else:
             wx.MessageBox("Gia shmera den yparxei kapoio onoma poy na exei giorth"+string, "Name Celebrations for "+date2, wx.OK, self)
+
+
 
 def run_main():
     app = MyApp(False)
