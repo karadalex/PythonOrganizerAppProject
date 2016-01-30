@@ -72,6 +72,11 @@ class TestFrame(wx.Frame):
     def __init__(self, parent):
         frameTitle = calendarList[0]
         testFrame = wx.Frame.__init__(self, parent, -1, frameTitle, size=(650, 160), style=wx.SYSTEM_MENU | wx.CLOSE_BOX | wx.MINIMIZE_BOX | wx.CAPTION)
+
+        #load application's icon
+        self.icon = wx.Icon('mediaFilesPackage/calendar.ico', wx.BITMAP_TYPE_ICO)
+        self.SetIcon(self.icon)
+
         grid = SimpleCalendarGrid(self)
 
 

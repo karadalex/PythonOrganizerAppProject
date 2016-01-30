@@ -9,11 +9,24 @@ class TextFrame(wx.Frame):
     def __init__(self):
         wx.Frame.__init__(self, None, -1, 'MyContacts', size=(720, 480))
 
+        #load application's icon
+        self.icon = wx.Icon('mediaFilesPackage/contacts.ico', wx.BITMAP_TYPE_ICO)
+        self.SetIcon(self.icon)
+
         menuFile = wx.Menu()
-        menuFile.Append(1, "Save")
-        menuFile.Append(2, "E&xit")
+        save = wx.MenuItem(menuFile, 1, '&Save', 'Save your work!')
+        save.SetBitmap(wx.Image('mediaFilesPackage/save.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
+        menuFile.AppendItem(save)
+
+        exit = wx.MenuItem(menuFile, 2, '&Quit', 'Quit the Application')
+        exit.SetBitmap(wx.Image('mediaFilesPackage/exitIcon.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
+        menuFile.AppendItem(exit)
+
         menuAbout = wx.Menu()
-        menuAbout.Append(3, "About MyContacts")
+        about = wx.MenuItem(menuAbout, 3, '&About MyContacts', 'See information about MyContacts')
+        about.SetBitmap(wx.Image('mediaFilesPackage/about.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
+        menuAbout.AppendItem(about)
+
         menuBar = wx.MenuBar()
         menuBar.Append(menuFile, "&File")
         menuBar.Append(menuAbout, "&About")

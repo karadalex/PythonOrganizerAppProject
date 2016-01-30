@@ -27,18 +27,39 @@ class MyFrame(wx.Frame):
         menuFile = wx.Menu()
         menuFile.Append(1, "Import Contacts...")
         menuFile.Append(6, "Import Calendar...")
+
         menuFile.AppendSeparator()
-        menuFile.Append(2, "E&xit")
+
+        exit = wx.MenuItem(menuFile, 2, '&Quit', 'Quit the Application')
+        exit.SetBitmap(wx.Image('mediaFilesPackage/exitIcon.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
+        menuFile.AppendItem(exit)
+
         menuHelp = wx.Menu()
-        menuHelp.Append(3, "&About...")
+        about = wx.MenuItem(menuHelp, 3, '&About...', 'See information about this application')
+        about.SetBitmap(wx.Image('mediaFilesPackage/about.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
+        menuHelp.AppendItem(about)
+
         menuHelp.Append(4, "&Version")
+
         menuEdit = wx.Menu()
-        menuEdit.Append(5, "&Edit/View your Contacts...")
+        editContacts = wx.MenuItem(menuEdit, 5, '&Edit/View MyContacts', 'Edit or view your Contacts')
+        editContacts.SetBitmap(wx.Image('mediaFilesPackage/edit.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
+        menuEdit.AppendItem(editContacts)
+
         menuView = wx.Menu()
-        menuView.Append(7, "&View whose Nameday is today...")
-        menuView.Append(8, "&Calendar")
+        viewNameday = wx.MenuItem(menuView, 7, '&View whose Nameday is today...', 'View whose Nameday is today...')
+        viewNameday.SetBitmap(wx.Image('mediaFilesPackage/birthday.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
+        menuView.AppendItem(viewNameday)
+
+        viewCalendar = wx.MenuItem(menuView, 8, '&Calendar', 'View your Calendar')
+        viewCalendar.SetBitmap(wx.Image('mediaFilesPackage/calendar.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
+        menuView.AppendItem(viewCalendar)
+
         menuNotes = wx.Menu()
-        menuNotes.Append(9, "&Edit Notes...")
+        editNotes = wx.MenuItem(menuView, 9, '&Edit Notes...', 'Edit your Notes!')
+        editNotes.SetBitmap(wx.Image('mediaFilesPackage/edit.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
+        menuNotes.AppendItem(editNotes)
+
         menuBar = wx.MenuBar()
         menuBar.Append(menuFile, "&File")
         menuBar.Append(menuEdit, "&Edit")
@@ -58,12 +79,16 @@ class MyFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self.OnViewCalendar, id=8)
         self.Bind(wx.EVT_MENU, self.OnEditNotes, id=9)
 
+        #load application's icon
+        self.icon = wx.Icon('mediaFilesPackage/appIcon32.ico', wx.BITMAP_TYPE_ICO)
+        self.SetIcon(self.icon)
 
         #load welcome picture
         self.bitmap = wx.Bitmap("mediaFilesPackage/welcomeScreen1.jpg")
         wx.EVT_PAINT(self, self.Paint)
         self.Centre()
 
+        #change background colour
         self.SetBackgroundColour('#1485CC')
 
 
