@@ -1,15 +1,15 @@
 ﻿# -*- coding: utf-8 -*-
 
 import __version__
-from codeFilesPackage import wx
+import wx
 from codeFilesPackage import csvConverter
 from codeFilesPackage import contactsTextEditor
 from codeFilesPackage import icsConverter
 from codeFilesPackage import nameDayViewer
 from codeFilesPackage import date
-#from codeFilesPackage import calendarSimpleText
 import os
 from codeFilesPackage import myNotesEditor
+from wx.lib.buttons import GenBitmapTextButton
 
 
 class MyApp(wx.App):
@@ -24,6 +24,8 @@ class MyFrame(wx.Frame):
     def __init__(self, title, pos, size):
         myFrame = wx.Frame.__init__(self, None, -1, title, pos, size, style=wx.SYSTEM_MENU | wx.CLOSE_BOX | wx.MINIMIZE_BOX | wx.CAPTION)
 
+        #Create the taskbar
+        #create menu "File"
         menuFile = wx.Menu()
         menuFile.Append(1, "Import Contacts...")
         menuFile.Append(6, "Import Calendar...")
@@ -83,13 +85,36 @@ class MyFrame(wx.Frame):
         self.icon = wx.Icon('mediaFilesPackage/appIcon32.ico', wx.BITMAP_TYPE_ICO)
         self.SetIcon(self.icon)
 
+        #change background colour
+        self.SetBackgroundColour('#1485CC')
+
         #load welcome picture
         self.bitmap = wx.Bitmap("mediaFilesPackage/welcomeScreen1.jpg")
         wx.EVT_PAINT(self, self.Paint)
         self.Centre()
 
-        #change background colour
-        self.SetBackgroundColour('#1485CC')
+        #Create buttons for main screen
+        panel = wx.Panel(self, -1)
+
+        editViewContactsButton = GenBitmapTextButton(self, 1, wx.Bitmap('mediaFilesPackage/edit.png'), 'Edit/View MyContacts', (480, 40), (200, 25))
+        editViewContactsButton.SetBezelWidth(1)
+        editViewContactsButton.SetBackgroundColour('#c2e6f8')
+        editViewContactsButton.Bind(wx.EVT_LEFT_DOWN, self.OnEditViewContacts)
+
+        viewNamedayButton = GenBitmapTextButton(self, 2, wx.Bitmap('mediaFilesPackage/birthday.png'), 'View whose nameday is today', (480, 75), (200, 25))
+        viewNamedayButton.SetBezelWidth(1)
+        viewNamedayButton.SetBackgroundColour('#c2e6f8')
+        viewNamedayButton.Bind(wx.EVT_LEFT_DOWN, self.OnViewNamedayToday)
+
+        viewCalendarButton = GenBitmapTextButton(self, 3, wx.Bitmap('mediaFilesPackage/calendar.png'), 'View calendar', (480, 110), (200, 25))
+        viewCalendarButton.SetBezelWidth(1)
+        viewCalendarButton.SetBackgroundColour('#c2e6f8')
+        viewCalendarButton.Bind(wx.EVT_LEFT_DOWN, self.OnViewCalendar)
+
+        editMyNotesButton = GenBitmapTextButton(self, 4, wx.Bitmap('mediaFilesPackage/edit.png'), 'Edit MyNotes', (480, 145), (200, 25))
+        editMyNotesButton.SetBezelWidth(1)
+        editMyNotesButton.SetBackgroundColour('#c2e6f8')
+        editMyNotesButton.Bind(wx.EVT_LEFT_DOWN, self.OnEditNotes)
 
 
     def Paint(self, event):

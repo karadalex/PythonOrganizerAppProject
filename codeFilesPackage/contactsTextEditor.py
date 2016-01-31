@@ -1,13 +1,12 @@
 import wx
 import textFileOperations
 import gotoMainFolderDirectory
-import greeklish
 
 
 
 class TextFrame(wx.Frame):
     def __init__(self):
-        wx.Frame.__init__(self, None, -1, 'MyContacts', size=(720, 480))
+        wx.Frame.__init__(self, None, -1, 'MyContacts', size=(720, 480), style=wx.SYSTEM_MENU | wx.CLOSE_BOX | wx.MINIMIZE_BOX | wx.CAPTION)
 
         #load application's icon
         self.icon = wx.Icon('mediaFilesPackage/contacts.ico', wx.BITMAP_TYPE_ICO)
@@ -40,12 +39,16 @@ class TextFrame(wx.Frame):
         multiLabel = wx.StaticText(panel, -1)
         gotoMainFolderDirectory.go()
         contacts = textFileOperations.textFileToString("mediaFilesPackage/contactsFile.txt")
-        self.multiText = wx.TextCtrl(panel, -1,contacts,size=(700, 480), style=wx.TE_MULTILINE)
+        self.multiText = wx.TextCtrl(panel, -1,contacts,size=(440, 400), style=wx.TE_MULTILINE)
         self.multiText.SetInsertionPoint(0)
 
         sizer = wx.FlexGridSizer(cols=2, hgap=6, vgap=6)
         sizer.AddMany([multiLabel, self.multiText])
         panel.SetSizer(sizer)
+
+        #change background colour
+        self.SetBackgroundColour('#1485CC')
+
 
     def OnContactsQuit(self, event):
         self.Close()
@@ -56,6 +59,10 @@ class TextFrame(wx.Frame):
 
     def OnAboutMyContacts(self, event):
         wx.MessageBox("An app where you can quickly edit & view your contacts! All in one place!!!", "MyContacts", wx.OK | wx.ICON_INFORMATION, self)
+
+    def Paint(self, event):
+        dc = wx.PaintDC(self)
+        dc.DrawBitmap(self.bitmap, 500, 500)
 
 def contactsTextEdit():
     #app = wx.PySimpleApp()
