@@ -23,7 +23,7 @@ class FinanceFrame(wx.Frame):
         self.icon = wx.Icon('mediaFilesPackage/myFinance.ico', wx.BITMAP_TYPE_ICO)
         self.SetIcon(self.icon)
 
-        # Create Finance Data:
+        # Create Finance Data and:
         self.initializeFinancialDataFile()
 
         #Create Menus
@@ -71,6 +71,9 @@ class FinanceFrame(wx.Frame):
         for i in range(len(columnsNames)):
             self.lc.InsertColumn(i, columnsNames[i])
             self.lc.SetColumnWidth(i, len(columnsNames[i]*10))
+
+        # Load data to ListCtrl object from csv file if existing:
+        self.loadDataFromCsvFile()
 
         # Add to upper-left corner panel (panel1) input controls (all controls are stored in list)
         self.inControls = range(len(columnsNames))
@@ -123,7 +126,18 @@ class FinanceFrame(wx.Frame):
         if firstCsvLine != firstLineString:
             # Specify content of csv file with first line:
             self.financialDataStore.write(firstLineString+"\n")
-        
+
+    def loadDataFromCsvFile(self):
+        # First Load data from csv file (if existing):
+            dataFile = textFileOperations.textFileToListWithStrings("mediaFilesPackage/FinancialData.csv")
+            if (len(dataFile) > 1 and len(dataFile[1]) > 1):
+                numOfItems = len(dataFile)-1
+                for i in range(1, numOfItems+1):
+                    dataLine = dataFile[i].split(";")
+                    self.lc.InsertStringItem(i-1, dataLine[0])
+                    for j in range(2, len(dataLine)):
+                        self.lc.SetStringItem(i-1, j, dataLine[j])
+
     # Define Buttons'functions:
     def OnAdd(self, event):
         # Adds data from the input fields to the List and collects the data to store them in the csv file:

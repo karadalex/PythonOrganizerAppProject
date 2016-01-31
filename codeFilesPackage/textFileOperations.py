@@ -7,7 +7,7 @@ def textFileToString(textFile):
     return string
 
 def textFileToListWithStrings(textFile):
-    text = open(textFile, "r", encoding="utf8")
+    text = open(textFile, "r")
     listOfTextLinesStrings = []
     for line in text:
         listOfTextLinesStrings.append(line)
