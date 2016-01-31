@@ -10,6 +10,7 @@ from codeFilesPackage import date
 import os
 from codeFilesPackage import myNotesEditor
 from wx.lib.buttons import GenBitmapTextButton
+from codeFilesPackage import myFinanceTool
 
 
 class MyApp(wx.App):
@@ -62,15 +63,24 @@ class MyFrame(wx.Frame):
         editNotes.SetBitmap(wx.Image('mediaFilesPackage/edit.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
         menuNotes.AppendItem(editNotes)
 
+        menuTools = wx.Menu()
+        myFinance_tool = wx.MenuItem(menuTools, 10, '&MyFinance', 'Track your expenses!')
+        myFinance_tool.SetBitmap(wx.Image('mediaFilesPackage/myFinance.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
+        menuTools.AppendItem(myFinance_tool)
+
         menuBar = wx.MenuBar()
         menuBar.Append(menuFile, "&File")
         menuBar.Append(menuEdit, "&Edit")
         menuBar.Append(menuView, "&View")
         menuBar.Append(menuNotes, "&My Notes")
+        menuBar.Append(menuTools, "&Tools")
         menuBar.Append(menuHelp, "&Help")
+
         self.SetMenuBar(menuBar)
         self.CreateStatusBar()
         self.SetStatusText("Welcome to your personal Organizer!")
+
+        # Assign functions to menu events:
         self.Bind(wx.EVT_MENU, self.OnImportContacts, id=1)
         self.Bind(wx.EVT_MENU, self.OnQuit, id=2)
         self.Bind(wx.EVT_MENU, self.OnAbout, id=3)
@@ -80,12 +90,13 @@ class MyFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self.OnViewNamedayToday, id=7)
         self.Bind(wx.EVT_MENU, self.OnViewCalendar, id=8)
         self.Bind(wx.EVT_MENU, self.OnEditNotes, id=9)
+        self.Bind(wx.EVT_MENU, self.OnMyFinanceTool, id=10)
 
         #load application's icon
         self.icon = wx.Icon('mediaFilesPackage/appIcon32.ico', wx.BITMAP_TYPE_ICO)
         self.SetIcon(self.icon)
 
-        #change background colour
+        #Set background colour
         self.SetBackgroundColour('#1485CC')
 
         #load welcome picture
@@ -159,6 +170,9 @@ class MyFrame(wx.Frame):
 
     def OnEditNotes(self, event):
         myNotesEditor.notesTextEdit()
+
+    def OnMyFinanceTool(selfself, event):
+        myFinanceTool.myFinanceTool()
 
 
 

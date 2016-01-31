@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aac20f8a-d2c3-4d59-a4c8-92fe458b984a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/codeFilesPackage/calendarSimpleText.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PythonOrganizerAppProject1.py" afterPath="$PROJECT_DIR$/PythonOrganizerAppProject1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codeFilesPackage/calendarSimpleText.pyw" afterPath="$PROJECT_DIR$/codeFilesPackage/calendarSimpleText.pyw" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py" afterPath="$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codeFilesPackage/myFinanceTool.py" afterPath="$PROJECT_DIR$/codeFilesPackage/myFinanceTool.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codeFilesPackage/myNotesEditor.py" afterPath="$PROJECT_DIR$/codeFilesPackage/myNotesEditor.py" />
     </list>
     <ignored path="PythonOrganizerAppProject1.iws" />
@@ -22,13 +21,15 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$calendarSimpleText.coverage" NAME="calendarSimpleText Coverage Results" MODIFIED="1454095103497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
+    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$Unittests_in_setup.coverage" NAME="Unittests in setup Coverage Results" MODIFIED="1454164779438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$Unittests_in_calendarSimpleText.coverage" NAME="Unittests in calendarSimpleText Coverage Results" MODIFIED="1454090167652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
-    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$PythonOrganizerAppProject1.coverage" NAME="PythonOrganizerAppProject1 Coverage Results" MODIFIED="1454164170966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$PythonOrganizerAppProject1.coverage" NAME="PythonOrganizerAppProject1 Coverage Results" MODIFIED="1454261449603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$csvConverter.coverage" NAME="csvConverter Coverage Results" MODIFIED="1454017647914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
+    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$myFinanceTool.coverage" NAME="myFinanceTool Coverage Results" MODIFIED="1454260473079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$nameDayViewer.coverage" NAME="nameDayViewer Coverage Results" MODIFIED="1452862339950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$greeklish.coverage" NAME="greeklish Coverage Results" MODIFIED="1454014521593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$testPySimpleApp.coverage" NAME="testPySimpleApp Coverage Results" MODIFIED="1454091936147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
-    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$contactsTextEditor.coverage" NAME="contactsTextEditor Coverage Results" MODIFIED="1454097812729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
+    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$contactsTextEditor.coverage" NAME="contactsTextEditor Coverage Results" MODIFIED="1454232590219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$gotoMainFolderDirectory.coverage" NAME="gotoMainFolderDirectory Coverage Results" MODIFIED="1450363099018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$date.coverage" NAME="date Coverage Results" MODIFIED="1450383992792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
   </component>
@@ -41,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PythonOrganizerAppProject1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PythonOrganizerAppProject1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PythonOrganizerAppProject1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84158415">
-              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="96" selection-end-column="31" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
               </folding>
@@ -53,23 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myNotesEditor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeFilesPackage/myNotesEditor.py">
+      <file leaf-file-name="myFinanceTool.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codeFilesPackage/myFinanceTool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contactsTextEditor.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            <state vertical-scroll-proportion="3.5148516">
+              <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,8 +69,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Setup Script" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -103,12 +92,14 @@
         <option value="$PROJECT_DIR$/codeFilesPackage/testPySimpleApp.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/icsConverter.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/csvConverter.py" />
-        <option value="$PROJECT_DIR$/__version__.py" />
-        <option value="$PROJECT_DIR$/codeFilesPackage/myNotesEditor.py" />
-        <option value="$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py" />
-        <option value="$PROJECT_DIR$/PythonOrganizerAppProject1.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/calendarSimpleText.py" />
+        <option value="$PROJECT_DIR$/__version__.py" />
+        <option value="$PROJECT_DIR$/codeFilesPackage/myFinanceTool.pyw.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/calendarSimpleText.pyw" />
+        <option value="$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py" />
+        <option value="$PROJECT_DIR$/codeFilesPackage/myNotesEditor.py" />
+        <option value="$PROJECT_DIR$/PythonOrganizerAppProject1.py" />
+        <option value="$PROJECT_DIR$/codeFilesPackage/myFinanceTool.py" />
       </list>
     </option>
   </component>
@@ -148,8 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -198,6 +187,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,47 +243,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in calendarSimpleText" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codeFilesPackage" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonOrganizerAppProject1" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeFilesPackage/calendarSimpleText.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="testPySimpleApp" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codeFilesPackage" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PythonOrganizerAppProject1" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeFilesPackage/testPySimpleApp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="contactsTextEditor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -307,6 +257,47 @@
       <module name="PythonOrganizerAppProject1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in setup" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonOrganizerAppProject1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="myFinanceTool" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codeFilesPackage" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PythonOrganizerAppProject1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codeFilesPackage/myFinanceTool.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -507,17 +498,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.PythonOrganizerAppProject1" />
       <item index="1" class="java.lang.String" itemvalue="Python.calendarSimpleText" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in calendarSimpleText" />
-      <item index="3" class="java.lang.String" itemvalue="Python.testPySimpleApp" />
-      <item index="4" class="java.lang.String" itemvalue="Python.contactsTextEditor" />
+      <item index="2" class="java.lang.String" itemvalue="Python.contactsTextEditor" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in setup" />
+      <item index="4" class="java.lang.String" itemvalue="Python.myFinanceTool" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.PythonOrganizerAppProject1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.contactsTextEditor" />
-        <item index="2" class="java.lang.String" itemvalue="Python.calendarSimpleText" />
-        <item index="3" class="java.lang.String" itemvalue="Python.testPySimpleApp" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in calendarSimpleText" />
+        <item index="1" class="java.lang.String" itemvalue="Python.myFinanceTool" />
+        <item index="2" class="java.lang.String" itemvalue="Python.contactsTextEditor" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in setup" />
+        <item index="4" class="java.lang.String" itemvalue="Python.calendarSimpleText" />
       </list>
     </recent_temporary>
   </component>
@@ -544,18 +535,24 @@
     <history-entry file="Unittests_in_calendarSimpleText - 2016.01.29 at 19h 56m 08s.xml">
       <configuration name="Unittests in calendarSimpleText" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_setup - 2016.01.30 at 16h 34m 57s.xml">
+      <configuration name="Unittests in setup" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_setup - 2016.01.30 at 16h 39m 39s.xml">
+      <configuration name="Unittests in setup" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1647145" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17423134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33123028" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -615,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,45 +935,46 @@
     <entry file="file://$PROJECT_DIR$/__version__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeFilesPackage/myNotesEditor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding />
+          <caret line="0" column="26" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/codeFilesPackage/calendarSimpleText.pyw">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6146096">
-          <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.18639798">
+          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeFilesPackage/myNotesEditor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11221122">
+          <caret line="5" column="147" selection-start-line="5" selection-start-column="147" selection-end-line="5" selection-end-column="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22442244">
+          <caret line="8" column="139" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="139" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonOrganizerAppProject1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84158415">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="96" selection-end-column="31" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeFilesPackage/myFinanceTool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.5148516">
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
