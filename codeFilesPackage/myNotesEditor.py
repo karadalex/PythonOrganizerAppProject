@@ -34,7 +34,7 @@ class TextFrame(wx.Frame):
 
         panel = wx.Panel(self, -1)
         multiLabel = wx.StaticText(panel, -1)
-        notes = text = open("mediaFilesPackage/notesFile.txt", "w")
+        notes = open("mediaFilesPackage/notesFile.txt", "w")
         notes = textFileOperations.textFileToString("mediaFilesPackage/notesFile.txt")
         self.multiText = wx.TextCtrl(panel, -1,notes,size=(550, 480), style=wx.TE_MULTILINE)
         self.multiText.SetInsertionPoint(0)

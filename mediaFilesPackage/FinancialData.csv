@@ -1,0 +1,4 @@
+Category;Payment Type;Account;Currency;Amount;Expense;Date;Time;Warranty (months)
+Car;;;EUR (Euro);10000;;;
+Groceries;Cash;;;20;;;
+Entertainment/culture;;;;200;;;

@@ -1,4 +1,5 @@
 import wx
+import textFileOperations
 
 # Names of columns for financial Data:
 columnsNames = "Category, Payment Type, Account, Currency, Amount, Expense, Date, Time, Warranty (months)".split(", ")
@@ -8,6 +9,7 @@ category = "Car, Groceries, Eating out, Salary/Income, Sport, Transport, Enterta
 paymentType = "Cash, Debit card, Credit card, Bank transfer, Voucher, Mobile payment, Web payment".split(", ")
 account = "My account, Family account, Debit card".split(", ")
 currency = "EUR (Euro), USD (United States Dollar), GBP (British Pound Sterling)".split(", ")
+
 
 
 class FinanceFrame(wx.Frame):
@@ -21,14 +23,17 @@ class FinanceFrame(wx.Frame):
         self.icon = wx.Icon('mediaFilesPackage/myFinance.ico', wx.BITMAP_TYPE_ICO)
         self.SetIcon(self.icon)
 
+        # Create Finance Data:
+        self.initializeFinancialDataFile()
+
         #Create Menus
         menuFile = wx.Menu()
-        exit = wx.MenuItem(menuFile, 2, '&Quit', 'Quit the Application')
+        exit = wx.MenuItem(menuFile, 5, '&Quit', 'Quit the Application')
         exit.SetBitmap(wx.Image('mediaFilesPackage/exitIcon.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
         menuFile.AppendItem(exit)
 
         menuAbout = wx.Menu()
-        about = wx.MenuItem(menuAbout, 3, '&About MyFinance', 'See information about MyFinance')
+        about = wx.MenuItem(menuAbout, 6, '&About MyFinance', 'See information about MyFinance')
         about.SetBitmap(wx.Image('mediaFilesPackage/about.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
         menuAbout.AppendItem(about)
 
@@ -94,7 +99,7 @@ class FinanceFrame(wx.Frame):
         panel1.SetSizer(vbox3)
 
         # Add buttons to organize content of ListCtrl
-        vbox4.Add(wx.Button(panel2, 1, 'Add'), 0, wx.ALIGN_CENTER | wx.TOP, 20)
+        vbox4.Add(wx.Button(panel2, 1, 'Add'), 0, wx.ALIGN_CENTER | wx.TOP, 15)
         vbox4.Add(wx.Button(panel2, 2, 'Remove'), 0, wx.ALIGN_CENTER | wx.TOP, 15)
         vbox4.Add(wx.Button(panel2, 3, 'Clear'), 0, wx.ALIGN_CENTER | wx.TOP, 15)
         vbox4.Add(wx.Button(panel2, 4, 'Close'), 0, wx.ALIGN_CENTER | wx.TOP, 15)
@@ -104,25 +109,49 @@ class FinanceFrame(wx.Frame):
         self.Bind(wx.EVT_BUTTON, self.OnAdd, id=1)
         self.Bind(wx.EVT_BUTTON, self.OnRemove, id=2)
         self.Bind(wx.EVT_BUTTON, self.OnClear, id=3)
-        self.Bind(wx.EVT_BUTTON, self.OnClear, id=4)
+        self.Bind(wx.EVT_BUTTON, self.OnClose, id=4)
 
         self.SetSizer(hbox)
 
+
+    def initializeFinancialDataFile(self):
+        # Store all financial data in a .csv file:
+        self.financialDataStore = open("mediaFilesPackage/FinancialData.csv", "a")
+        #financialDataRead = open("mediaFilesPackage/FinancialData.csv", "r")
+        firstLineString = "Category;Payment Type;Account;Currency;Amount;Expense;Date;Time;Warranty (months)"
+        firstCsvLine = textFileOperations.textFileToString("mediaFilesPackage/FinancialData.csv").split('\n', 1)[0]
+        if firstCsvLine != firstLineString:
+            # Specify content of csv file with first line:
+            self.financialDataStore.write(firstLineString+"\n")
         
     # Define Buttons'functions:
     def OnAdd(self, event):
+        # Adds data from the input fields to the List and collects the data to store them in the csv file:
+
         # If there isnt at least one field with a value then pass
         if not any([ self.inControls[i].GetValue() for i in range(len(columnsNames)) ]):
             pass
+
         # count number of preexisting list items
         numOfItems = self.lc.GetItemCount()
         # insert data to ListCtrl
         self.lc.InsertStringItem(numOfItems, self.inControls[0].GetValue())
+        # store data line as string:
+        dataLineString = ""
+        dataLineString += self.inControls[0].GetValue() + ";"
         for i in range(1, 4):
             self.lc.SetStringItem(numOfItems, i, self.inControls[i].GetValue())
+            dataLineString += self.inControls[i].GetValue() + ";"
         for i in range(5, len(columnsNames)):
             self.lc.SetStringItem(numOfItems, i, self.inControls[i].GetValue())
+            dataLineString += self.inControls[i].GetValue() + ";"
             self.inControls[i].Clear()
+
+        # erase last comma from line and add to csv file:
+        dataLineString = dataLineString[:-1]
+        print dataLineString
+        self.financialDataStore.write(dataLineString+"\n")
+
 
     def OnRemove(self, event):
         index = self.lc.GetFocusedItem()
@@ -135,7 +164,7 @@ class FinanceFrame(wx.Frame):
         self.lc.DeleteAllItems()
 
     def OnAboutMyFinance(self, event):
-        wx.MessageBox("An app where you can keep track of your financial data!!!", "MyFinance", wx.OK | wx.ICON_INFORMATION, self)
+        wx.MessageBox("An app where you can keep track of your financial data!!!\n Keep track of your expenses or accounts with this simple tool!", "MyFinance", wx.OK | wx.ICON_INFORMATION, self)
 
 
 

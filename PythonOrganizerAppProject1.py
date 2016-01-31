@@ -127,6 +127,11 @@ class MyFrame(wx.Frame):
         editMyNotesButton.SetBackgroundColour('#c2e6f8')
         editMyNotesButton.Bind(wx.EVT_LEFT_DOWN, self.OnEditNotes)
 
+        myFinanceToolButton = GenBitmapTextButton(self, 5, wx.Bitmap('mediaFilesPackage/myFinance.png'), 'Organize your financial data!', (480, 180), (200, 25))
+        myFinanceToolButton.SetBezelWidth(1)
+        myFinanceToolButton.SetBackgroundColour('#c2e6f8')
+        myFinanceToolButton.Bind(wx.EVT_LEFT_DOWN, self.OnMyFinanceTool)
+
 
     def Paint(self, event):
         dc = wx.PaintDC(self)

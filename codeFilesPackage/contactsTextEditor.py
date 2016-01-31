@@ -43,7 +43,7 @@ class TextFrame(wx.Frame):
         multiLabel = wx.StaticText(panel, -1)
         gotoMainFolderDirectory.go()
         contacts = textFileOperations.textFileToString("mediaFilesPackage/contactsFile.txt")
-        self.multiText = wx.TextCtrl(panel, -1,contacts,size=(430, 410), style=wx.TE_MULTILINE)
+        self.multiText = wx.TextCtrl(panel, -1,contacts,size=(435, 410), style=wx.TE_MULTILINE)
         self.multiText.SetInsertionPoint(0)
 
         #load MyContacts picture

@@ -23,7 +23,7 @@
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$calendarSimpleText.coverage" NAME="calendarSimpleText Coverage Results" MODIFIED="1454095103497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$Unittests_in_setup.coverage" NAME="Unittests in setup Coverage Results" MODIFIED="1454164779438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$Unittests_in_calendarSimpleText.coverage" NAME="Unittests in calendarSimpleText Coverage Results" MODIFIED="1454090167652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
-    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$PythonOrganizerAppProject1.coverage" NAME="PythonOrganizerAppProject1 Coverage Results" MODIFIED="1454261449603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$PythonOrganizerAppProject1.coverage" NAME="PythonOrganizerAppProject1 Coverage Results" MODIFIED="1454270648418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$csvConverter.coverage" NAME="csvConverter Coverage Results" MODIFIED="1454017647914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$myFinanceTool.coverage" NAME="myFinanceTool Coverage Results" MODIFIED="1454260473079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
     <SUITE FILE_PATH="coverage/PythonOrganizerAppProject1$nameDayViewer.coverage" NAME="nameDayViewer Coverage Results" MODIFIED="1452862339950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/codeFilesPackage" />
@@ -46,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/PythonOrganizerAppProject1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="96" selection-end-column="31" />
+              <caret line="132" column="71" selection-start-line="132" selection-start-column="71" selection-end-line="132" selection-end-column="71" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
               </folding>
@@ -57,8 +57,30 @@
       <file leaf-file-name="myFinanceTool.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codeFilesPackage/myFinanceTool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.5148516">
-              <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.30858085">
+              <caret line="119" column="9" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="textFileOperations.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeFilesPackage/textFileOperations.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myNotesEditor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/codeFilesPackage/myNotesEditor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="48" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -96,9 +118,9 @@
         <option value="$PROJECT_DIR$/__version__.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/myFinanceTool.pyw.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/calendarSimpleText.pyw" />
+        <option value="$PROJECT_DIR$/PythonOrganizerAppProject1.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/myNotesEditor.py" />
-        <option value="$PROJECT_DIR$/PythonOrganizerAppProject1.py" />
         <option value="$PROJECT_DIR$/codeFilesPackage/myFinanceTool.py" />
       </list>
     </option>
@@ -139,6 +161,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -187,8 +211,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -925,13 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeFilesPackage/textFileOperations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__version__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -946,35 +961,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codeFilesPackage/myNotesEditor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11221122">
-          <caret line="5" column="147" selection-start-line="5" selection-start-column="147" selection-end-line="5" selection-end-column="147" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codeFilesPackage/contactsTextEditor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22442244">
-          <caret line="8" column="139" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="139" />
+        <state vertical-scroll-proportion="0.17171717">
+          <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PythonOrganizerAppProject1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="96" selection-end-column="31" />
+          <caret line="132" column="71" selection-start-line="132" selection-start-column="71" selection-end-line="132" selection-end-column="71" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/codeFilesPackage/myNotesEditor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="48" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codeFilesPackage/textFileOperations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/codeFilesPackage/myFinanceTool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.5148516">
-          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.30858085">
+          <caret line="119" column="9" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
