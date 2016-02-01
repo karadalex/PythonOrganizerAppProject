@@ -1,4 +1,5 @@
 import wx
+import os
 import textFileOperations
 
 # Names of columns for financial Data:
@@ -28,12 +29,16 @@ class FinanceFrame(wx.Frame):
 
         #Create Menus
         menuFile = wx.Menu()
-        exit = wx.MenuItem(menuFile, 5, '&Quit', 'Quit the Application')
+        export = wx.MenuItem(menuFile, 5, '&Export Data', 'Export your financial data for further use!')
+        menuFile.AppendItem(export)
+        menuFile.AppendSeparator()
+
+        exit = wx.MenuItem(menuFile, 6, '&Quit', 'Quit the Application')
         exit.SetBitmap(wx.Image('mediaFilesPackage/exitIcon.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
         menuFile.AppendItem(exit)
 
         menuAbout = wx.Menu()
-        about = wx.MenuItem(menuAbout, 6, '&About MyFinance', 'See information about MyFinance')
+        about = wx.MenuItem(menuAbout, 7, '&About MyFinance', 'See information about MyFinance')
         about.SetBitmap(wx.Image('mediaFilesPackage/about.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
         menuAbout.AppendItem(about)
 
@@ -45,8 +50,10 @@ class FinanceFrame(wx.Frame):
         self.CreateStatusBar()
 
         #Assign to each menu option an event which will be assigned to a function
-        self.Bind(wx.EVT_MENU, self.OnClose, id=5)
-        self.Bind(wx.EVT_MENU, self.OnAboutMyFinance, id=6)
+        self.Bind(wx.EVT_MENU, self.OnExport, id=5)
+        self.Bind(wx.EVT_MENU, self.OnClose, id=6)
+        self.Bind(wx.EVT_MENU, self.OnAboutMyFinance, id=7)
+
 
         # first create an horizontal box
         hbox = wx.BoxSizer(wx.HORIZONTAL)
@@ -163,7 +170,6 @@ class FinanceFrame(wx.Frame):
 
         # erase last comma from line and add to csv file:
         dataLineString = dataLineString[:-1]
-        print dataLineString
         self.financialDataStore.write(dataLineString+"\n")
 
 
@@ -179,6 +185,21 @@ class FinanceFrame(wx.Frame):
 
     def OnAboutMyFinance(self, event):
         wx.MessageBox("An app where you can keep track of your financial data!!!\n Keep track of your expenses or accounts with this simple tool!", "MyFinance", wx.OK | wx.ICON_INFORMATION, self)
+
+    def OnExport(self, event):
+        dlg = wx.FileDialog(self, "Save project as...", "", "", "CSV File (*.csv) | *.csv", wx.SAVE | wx.OVERWRITE_PROMPT)
+        if dlg.ShowModal() == wx.ID_OK:
+            # Grab the content to be saved
+            content = textFileOperations.textFileToString("mediaFilesPackage/FinancialData.csv")
+
+            # Open the file for write, write, close
+            self.filename=dlg.GetFilename()
+            self.dirname=dlg.GetDirectory()
+            filehandle=open(os.path.join(self.dirname, self.filename),'w')
+            filehandle.write(content)
+            filehandle.close()
+        # Get rid of the dialog to keep things tidy
+        dlg.Destroy()
 
 
 

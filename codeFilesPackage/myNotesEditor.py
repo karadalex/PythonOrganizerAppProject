@@ -3,7 +3,7 @@ import textFileOperations
 
 class TextFrame(wx.Frame):
     def __init__(self):
-        wx.Frame.__init__(self, None, -1, 'Text Entry Example', size=(720, 480), style=wx.SYSTEM_MENU | wx.CLOSE_BOX | wx.MINIMIZE_BOX | wx.CAPTION)
+        wx.Frame.__init__(self, None, -1, 'My Notes', size=(720, 480), style=wx.SYSTEM_MENU | wx.CLOSE_BOX | wx.MINIMIZE_BOX | wx.CAPTION)
 
         #load application's icon
         self.icon = wx.Icon('mediaFilesPackage/mynotes.ico', wx.BITMAP_TYPE_ICO)
@@ -34,7 +34,6 @@ class TextFrame(wx.Frame):
 
         panel = wx.Panel(self, -1)
         multiLabel = wx.StaticText(panel, -1)
-        notes = open("mediaFilesPackage/notesFile.txt", "w")
         notes = textFileOperations.textFileToString("mediaFilesPackage/notesFile.txt")
         self.multiText = wx.TextCtrl(panel, -1,notes,size=(550, 480), style=wx.TE_MULTILINE)
         self.multiText.SetInsertionPoint(0)
@@ -61,7 +60,7 @@ class TextFrame(wx.Frame):
         wx.MessageBox("An app where you can quickly store and edit various notes!!!", "MyNotes", wx.OK | wx.ICON_INFORMATION, self)
 
 def notesTextEdit():
-    app = wx.App()
+    #app = wx.App()
     frame = TextFrame()
     frame.Show()
-    app.MainLoop()
+    #app.MainLoop()
