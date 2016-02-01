@@ -66,9 +66,14 @@ class SimpleCalendarGrid(wx.grid.Grid):
         for i in range(5):
             week = "week "+str(i+1)
             self.SetRowLabelValue(i, week)
-            for j in range(7):
-                cellValue = calendarList[i+2][j]
-                self.SetCellValue(i, j, cellValue)
+            try:
+                for j in range(7):
+                    cellValue = calendarList[i+2][j]
+                    self.SetCellValue(i, j, cellValue)
+            except IndexError:
+                for j in range(7):
+                    cellValue = calendarList[i+1][j]
+                    self.SetCellValue(i, j, cellValue)
 
 class TestFrame(wx.Frame):
     def __init__(self, parent):
