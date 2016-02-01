@@ -36,5 +36,6 @@ def nameDayDictionaryCreation():
         nameDayDictionary.update({date:dayString})
     return nameDayDictionary
 
-# Check function nameDayDictionaryCreation()
+
+# Uncomment to check function nameDayDictionaryCreation()
 #print nameDayDictionaryCreation()

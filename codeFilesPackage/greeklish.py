@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+
+# Convert Greek characters to Latin Characters in case that encodings dont work:
+
 def greekToGreeklish(character):
     greekCharactersUpperList1 = "Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω".split(" ")
     latinCharactersUpperList1 = "A B G D E Z H TH I K L M N KS O P R S T Y F X PS W".split(" ")

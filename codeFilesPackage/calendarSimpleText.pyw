@@ -3,8 +3,9 @@ import calendar
 import wx
 import wx.grid
 
+
 def calendarText():
-    """example:
+    """example return:
 
              January 2016
      Mo Tu We Th Fr Sa Su
@@ -48,6 +49,7 @@ def calendarTextToListForGrid(text):
         output.append(listHelp)
     return output
 
+# uncomment these to test code:
 #test calendarTextToListForGrid(text)
 #print calendarTextToListForGrid(calendarText())
 

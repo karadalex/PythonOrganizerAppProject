@@ -9,6 +9,7 @@ class TextFrame(wx.Frame):
         self.icon = wx.Icon('mediaFilesPackage/mynotes.ico', wx.BITMAP_TYPE_ICO)
         self.SetIcon(self.icon)
 
+        # Create menu File and add to it menu options
         menuFile = wx.Menu()
         save = wx.MenuItem(menuFile, 1, '&Save', 'Save your work!')
         save.SetBitmap(wx.Image('mediaFilesPackage/save.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
@@ -18,11 +19,13 @@ class TextFrame(wx.Frame):
         exit.SetBitmap(wx.Image('mediaFilesPackage/exitIcon.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
         menuFile.AppendItem(exit)
 
+        # Create menu About and add to it menu options
         menuAbout = wx.Menu()
         about = wx.MenuItem(menuAbout, 3, '&About MyNotes', 'See information about MyNotes')
         about.SetBitmap(wx.Image('mediaFilesPackage/about.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
         menuAbout.AppendItem(about)
 
+        # Create menu Bar whare the above menus are placed:
         menuBar = wx.MenuBar()
         menuBar.Append(menuFile, "&File")
         menuBar.Append(menuAbout, "&About")
@@ -32,6 +35,7 @@ class TextFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self.OnNotesQuit, id=2)
         self.Bind(wx.EVT_MENU, self.OnAboutMyNotes, id=3)
 
+        # Create a panel and add to it the text field:
         panel = wx.Panel(self, -1)
         multiLabel = wx.StaticText(panel, -1)
         notes = textFileOperations.textFileToString("mediaFilesPackage/notesFile.txt")
@@ -49,6 +53,9 @@ class TextFrame(wx.Frame):
         #Set background colour
         self.SetBackgroundColour('#1485CC')
 
+
+    # Define the functions that are assigned to the above events:
+
     def OnNotesQuit(self, event):
         self.Close()
 
@@ -58,6 +65,9 @@ class TextFrame(wx.Frame):
 
     def OnAboutMyNotes(self, event):
         wx.MessageBox("An app where you can quickly store and edit various notes!!!", "MyNotes", wx.OK | wx.ICON_INFORMATION, self)
+
+
+# Run an instance of the above class:
 
 def notesTextEdit():
     #app = wx.App()

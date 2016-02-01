@@ -1,3 +1,6 @@
+# Functions for converting a textfile to a single string or a list which has as elements the lines as strings:
+
+
 def textFileToString(textFile):
     text = open(textFile, "r")
     string = ""

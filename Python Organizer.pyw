@@ -1,5 +1,8 @@
-#import PythonOrganizerAppProject1 module
-import PythonOrganizerAppProject1
+# The purpose of this file is to run the "PythonOrganizerAppProject.py" without needing to run Python IDLE
+
+
+# import PythonOrganizerAppProject1 module
+import PythonOrganizerAppProject
 
 #Run the main function of the program
-PythonOrganizerAppProject1.run_main()
+PythonOrganizerAppProject.run_main()

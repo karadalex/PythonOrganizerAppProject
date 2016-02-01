@@ -36,6 +36,7 @@ class fullDateString():
         self.month = numberOfMonth()
         self.year = numberOfYear()
 
+    # Define output of command "print <fullDateString>" :
     def __str__(self):
         return self.dayName+" "+str(self.day)+" "+self.monthName+" "+str(self.year)
 

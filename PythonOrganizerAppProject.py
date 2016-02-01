@@ -15,12 +15,14 @@ from codeFilesPackage import myFinanceTool
 
 class MyApp(wx.App):
 
+    # Initiate main frame window:
     def OnInit(self):
        frame = MyFrame("Organizer", (50, 60), (720, 480))
        frame.Show(True)
        self.SetTopWindow(frame)
        return True
 
+# Define the class where all widgets are added, this class inherits from wx.Frame class:
 class MyFrame(wx.Frame):
     def __init__(self, title, pos, size):
         myFrame = wx.Frame.__init__(self, None, -1, title, pos, size, style=wx.SYSTEM_MENU | wx.CLOSE_BOX | wx.MINIMIZE_BOX | wx.CAPTION)
@@ -37,6 +39,7 @@ class MyFrame(wx.Frame):
         exit.SetBitmap(wx.Image('mediaFilesPackage/exitIcon.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
         menuFile.AppendItem(exit)
 
+        # create menu Help:
         menuHelp = wx.Menu()
         about = wx.MenuItem(menuHelp, 3, '&About...', 'See information about this application')
         about.SetBitmap(wx.Image('mediaFilesPackage/about.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
@@ -44,11 +47,13 @@ class MyFrame(wx.Frame):
 
         menuHelp.Append(4, "&Version")
 
+        # Create menu Edit:
         menuEdit = wx.Menu()
         editContacts = wx.MenuItem(menuEdit, 5, '&Edit/View MyContacts', 'Edit or view your Contacts')
         editContacts.SetBitmap(wx.Image('mediaFilesPackage/edit.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
         menuEdit.AppendItem(editContacts)
 
+        # Create menu View:
         menuView = wx.Menu()
         viewNameday = wx.MenuItem(menuView, 7, '&View whose Nameday is today...', 'View whose Nameday is today...')
         viewNameday.SetBitmap(wx.Image('mediaFilesPackage/birthday.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
@@ -58,6 +63,7 @@ class MyFrame(wx.Frame):
         viewCalendar.SetBitmap(wx.Image('mediaFilesPackage/calendar.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
         menuView.AppendItem(viewCalendar)
 
+        # Create menu  Notes:
         menuNotes = wx.Menu()
         editNotes = wx.MenuItem(menuView, 9, '&Edit Notes...', 'Edit your Notes!')
         editNotes.SetBitmap(wx.Image('mediaFilesPackage/edit.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
@@ -68,6 +74,7 @@ class MyFrame(wx.Frame):
         myFinance_tool.SetBitmap(wx.Image('mediaFilesPackage/myFinance.png', wx.BITMAP_TYPE_PNG).ConvertToBitmap())
         menuTools.AppendItem(myFinance_tool)
 
+        # Add all submenus to the main menu:
         menuBar = wx.MenuBar()
         menuBar.Append(menuFile, "&File")
         menuBar.Append(menuEdit, "&Edit")
@@ -133,6 +140,9 @@ class MyFrame(wx.Frame):
         myFinanceToolButton.Bind(wx.EVT_LEFT_DOWN, self.OnMyFinanceTool)
 
 
+
+    # Define the functions which are assigned to the events:
+
     def Paint(self, event):
         dc = wx.PaintDC(self)
         dc.DrawBitmap(self.bitmap, 30, 20)
@@ -168,7 +178,6 @@ class MyFrame(wx.Frame):
             wx.MessageBox("Gia shmera den yparxei kapoio onoma poy na exei giorth"+string, "Name Celebrations for "+date2, wx.OK, self)
 
     def OnViewCalendar(self, event):
-        #calendarSimpleText.runCalendar()
         filename=os.getcwd()+"\codeFilesPackage\calendarSimpleText.pyw"
         print filename
         os.startfile(filename, 'open')
@@ -180,6 +189,9 @@ class MyFrame(wx.Frame):
         myFinanceTool.myFinanceTool()
 
 
+
+
+# Start running this python file:
 
 def run_main():
     mainApplication = MyApp(False)

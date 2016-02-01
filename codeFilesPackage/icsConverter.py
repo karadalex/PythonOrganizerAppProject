@@ -2,6 +2,9 @@ import wx
 import os
 import gotoMainFolderDirectory
 
+
+# Convert Calendar to text format (under construction...) :
+
 def makeCalendarTextFromCsv():
     #app = wx.App()
     wildcard = "Google Calendar file (*.ics)|*.ics|" \

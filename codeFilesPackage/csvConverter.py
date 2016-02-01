@@ -7,6 +7,8 @@ import greeklish
 
 def makeContactsTextFromCsv():
     #app = wx.App()
+
+    # Create a File Opening Dialog:
     wildcard = "Outlook CSV file (*.csv)|*.csv|" \
                "Gmail CSV file (*.csv)|*.csv|" \
             "All files (*.*)|*.*"
@@ -17,6 +19,7 @@ def makeContactsTextFromCsv():
         print "_________________________________________________________________________________"
     dialog.Destroy()
 
+    # Convert opened csv file to an easier to read and edit txt file:
     flag=True
     try:
         csvFile = open(filePath, "r")
@@ -53,6 +56,8 @@ def makeContactsTextFromCsv():
         pass
 
     #app.Destroy()
+
+
 #test if file is created
 #newFile = makeContactsTextFromCsv()
 

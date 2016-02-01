@@ -39,6 +39,7 @@ class TextFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self.OnContactsQuit, id=2)
         self.Bind(wx.EVT_MENU, self.OnAboutMyContacts, id=3)
 
+        # Create a panel and add to it the text Field:
         panel = wx.Panel(self, -1)
         multiLabel = wx.StaticText(panel, -1)
         gotoMainFolderDirectory.go()
@@ -58,6 +59,8 @@ class TextFrame(wx.Frame):
         self.SetBackgroundColour('#1485CC')
 
 
+    # Define functions that are assigned to the events above:
+
     def OnContactsQuit(self, event):
         self.Close()
 
@@ -72,10 +75,13 @@ class TextFrame(wx.Frame):
         dc = wx.PaintDC(self)
         dc.DrawBitmap(self.bitmap, 500, 500)
 
+
+
+
+# Run an instance of the above class:
+
 def contactsTextEdit():
     app = wx.App()
     frame = TextFrame()
     frame.Show()
     app.MainLoop()
-
-#contactsTextEdit()
