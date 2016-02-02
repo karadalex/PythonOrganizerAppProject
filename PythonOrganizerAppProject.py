@@ -178,9 +178,14 @@ class MyFrame(wx.Frame):
             wx.MessageBox("Gia shmera den yparxei kapoio onoma poy na exei giorth"+string, "Name Celebrations for "+date2, wx.OK, self)
 
     def OnViewCalendar(self, event):
-        filename=os.getcwd()+"\codeFilesPackage\calendarSimpleText.pyw"
+        filename=os.getcwd()+"/codeFilesPackage/calendarSimpleText.py"
         print filename
-        os.startfile(filename, 'open')
+        try:
+            # Start in Windows OS
+            os.startfile(filename, 'open')
+        except AttributeError:
+            # Start in Mac OS X, Linux
+            os.system('python '+filename)
 
     def OnEditNotes(self, event):
         myNotesEditor.notesTextEdit()
