@@ -46,7 +46,7 @@ cd Downloads/PythonOrganizerAppProject-master
 ```
 python runOnMac.py
 ```
-2. Your application is ready!
+Your application is ready!
 
 
 Instructions for installation and execution of the application "Python Organizer" (Linux users)
@@ -58,9 +58,9 @@ Instructions for installation and execution of the application "Python Organizer
 sudo apt-get update
 sudo apt-get install python-wxgtk2.8 python-wxtools wx2.8-i18n
 ```
-3. Then type:
+then type:
 ```
 python PythonOrganizerAppProject.py
 ```
-4. Your application is ready!
+Your application is ready!
 
