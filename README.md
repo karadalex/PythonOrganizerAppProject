@@ -21,8 +21,9 @@ To start using the program double-click on:
   - Track your financial data (expenses, accounts etc.) and export them as csv!
 
 
-Instructions for installation and execution of the application "Python Organizer"
----------------------------------------------------------------------------------
+
+Instructions for installation and execution of the application "Python Organizer" (Windows users only)
+------------------------------------------------------------------------------------------------------
 
 1. Download from the website [www.python.org/downloads/](https://www.python.org/downloads/) Python 2.7.x
 2. Run the file you just downloaded and install Python
@@ -30,3 +31,26 @@ Instructions for installation and execution of the application "Python Organizer
 4. Run the executable and install the library wxPython
 5. From the folder PythonOrganizerAppProject double-click on the file "Python Organizer.pyw"
 6. Your application is ready!
+
+
+Instructions for installation and execution of the application "Python Organizer" (Mac OS X users)
+--------------------------------------------------------------------------------------------------
+
+1. Open a new window terminal and go in the folder of the application, for example : 
+    > cd Downloads/PythonOrganizerAppProject-master
+  and then type:
+    > python runOnMac.py
+2. Your application is ready!
+
+
+Instructions for installation and execution of the application "Python Organizer" (Linux users)
+-----------------------------------------------------------------------------------------------
+
+1. Open a new terminal window in the "PythonOrganizerAppProject-master" folder
+2. Install wxPython with the following commands:
+    > sudo apt-get update
+    > sudo apt-get install python-wxgtk2.8 python-wxtools wx2.8-i18n
+3. Then type:
+    > python PythonOrganizerAppProject.py
+4. Your application is ready!
+
