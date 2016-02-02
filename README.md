@@ -10,7 +10,9 @@ _An organizer app made with Python 2.7.8 and wxPython_
  
 ###Running Guide
 To start using the program double-click on:
-  `Python Organizer.pyw`
+```
+Python Organizer.pyw
+```
 
 ###Program Features:
   - Import Contacts from Google or Outlook (.csv files)
@@ -37,9 +39,13 @@ Instructions for installation and execution of the application "Python Organizer
 --------------------------------------------------------------------------------------------------
 
 1. Open a new window terminal and go in the folder of the application, for example : 
-    `cd Downloads/PythonOrganizerAppProject-master`
+```
+cd Downloads/PythonOrganizerAppProject-master
+```
   and then type:
-    `python runOnMac.py`
+```
+python runOnMac.py
+```
 2. Your application is ready!
 
 
@@ -48,9 +54,13 @@ Instructions for installation and execution of the application "Python Organizer
 
 1. Open a new terminal window in the "PythonOrganizerAppProject-master" folder
 2. Install wxPython with the following commands:
-    `sudo apt-get update`
-    `sudo apt-get install python-wxgtk2.8 python-wxtools wx2.8-i18n`
+```
+sudo apt-get update
+sudo apt-get install python-wxgtk2.8 python-wxtools wx2.8-i18n
+```
 3. Then type:
-    `python PythonOrganizerAppProject.py`
+```
+python PythonOrganizerAppProject.py
+```
 4. Your application is ready!
 
